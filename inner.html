@@ -19,52 +19,54 @@
       </nav>
     </header>
     <main>
-      <h1>Гостиницы Седоны</h1>
+      <h1 class="visually-hidden">Гостиницы Седоны</h1>
       <section>
-        <h2>Фильтр</h2>
+        <h2 class="visually-hidden">Фильтр</h2>
         <div>
           <img src="background-filter" alt="">
         </div>
-      <div>
-        <p>Инфраструктура</p>
-        <ul>
-          <li>
-            <input type="checkbox" name="pool" id="pool-field" checked>
-            <label for="pool-field">Бассеин</label>
-          </li>
-          <li>
-            <input type="checkbox" name="parking" id="parking-field">
-            <label for="parking-field">Парковка</label>
-          </li>
-          <li>
-            <input type="checkbox" name="wi-fi" id="wi-fi-field">
-            <label for="wi-fi-field">Wi-Fi</label>
-          </li>
-        </ul>
-      </div>
-      <div>
-        <p>Тип жилья:</p>
-        <ul>
-          <li>
-            <input type="checkbox" name="hotel" id="hotel-field" checked>
-            <label for="hotel-field">Гостиница</label>
-          </li>
-          <li>
-            <input type="checkbox" name="motel" id="motel-field" checked>
-            <label for="motel-field">Мотель</label>
-          </li>
-          <li>
-            <input type="checkbox" name="appartaments" id="appartaments-field" checked>
-            <label for="appartaments-field">Аппартаменты</label>
-          </li>
-        </ul>
-      </div>
-      <div>
-        <!--JS-->
-        <label for="price-field">Стоимость в сутки (Р):</label>
-        <input type="range" name="price-field" min="0" max="4000" step="50" value="3000">
-        <button type="button">Показать</button>
-      </div>
+        <form class="filter" method="get" action="">
+          <fieldset>
+          <legend>Инфраструктура:</legend>
+          <ul>
+            <li>
+              <input type="checkbox" name="pool" id="pool-field" checked>
+              <label for="pool-field">Бассеин</label>
+            </li>
+            <li>
+              <input type="checkbox" name="parking" id="parking-field">
+              <label for="parking-field">Парковка</label>
+            </li>
+            <li>
+              <input type="checkbox" name="wi-fi" id="wi-fi-field">
+              <label for="wi-fi-field">Wi-Fi</label>
+            </li>
+          </ul>
+          </fieldset>
+          <fieldset>
+          <legend>Тип жилья:</legend>
+            <ul>
+              <li>
+                <input type="checkbox" name="hotel" id="hotel-field" checked>
+                <label for="hotel-field">Гостиница</label>
+              </li>
+              <li>
+                <input type="checkbox" name="motel" id="motel-field" checked>
+                <label for="motel-field">Мотель</label>
+              </li>
+              <li>
+                <input type="checkbox" name="appartaments" id="appartaments-field" checked>
+                <label for="appartaments-field">Аппартаменты</label>
+              </li>
+            </ul>
+          </fieldset>
+        <fieldset>
+          <!--JS-->
+          <label for="price-field">Стоимость в сутки (Р):</label>
+          <input type="range" name="price-field" min="0" max="4000" step="50" value="3000">
+          <button type="button">Показать</button>
+        </fieldset>
+    </form>
       </section>
       <section>
         <h2>Найдено: <span>3</span></h2>
@@ -78,7 +80,7 @@
         <button type="button"></button>
       </section>
       <section>
-        <h2>Гостиницы</h2>
+        <h2 class="visually-hidden">Гостиницы</h2>
         <ul>
           <li>
             <div>

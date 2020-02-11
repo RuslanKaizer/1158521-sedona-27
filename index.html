@@ -20,11 +20,11 @@
     </header>
     <main>
       <section>
-        <h1>Welcome to the gorgeous Sedona «Because the Grand Canyon sucks»</h1>
+        <h1 class="visually-hidden">Welcome to the gorgeous Sedona «Because the Grand Canyon sucks»</h1>
         <img src="./img/svg/intro-welcome.svg" width="459px" height="353px" alt="Welcome to the gorgeous Sedona «Because the Grand Canyon sucks»">
       </section>
       <section>
-        <h2>Преимущества Седоны</h2>
+        <h2 class="visually-hidden">Преимущества Седоны</h2>
         <div>
           <h2>Седона — небольшой городок в Аризоне, заслуживающий большего!</h2>
           <p>Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
@@ -81,31 +81,33 @@
           Укажите предполагаемые даты поездки,<br>
           и мы покажем вам лучшие предложения гостиниц в седоне
         </p>
-      <span>
         <a href="">Поиск гостиницы в Седоне</a>
-        <ul>
-          <li>
-            <label for="arrival-date-field">Дата заезда:</label>
-            <input type="date" name="arrival-date" id="arrival-date-field" placeholder="24 апреля 2017">
-          </li>
-          <li>
-            <label for="departure-date-field">Дата выезда:</label>
-            <input type="date" name="departure-date" id="departure-date-field" placeholder="4 июля 2017">
-          </li>
-          <li>
-            <label for="adults-amount-field">Взрослые: </label>
-            <input type="number" name="adults-amount" id="adults-amount-field" min="1" max="10" step="1" value="2">
-          </li>
-          <li>
-            <label for="children-amount-field">Дети: </label>
-            <input type="number" name="children-amount" id="children-amount-field" min="0" max="10" step="1" value="0">
-          </li>
-        </ul>
-        <a href="inner.html">Найти</a>
-      </span>
+        <form class="search" method="get" action="">
+          <fieldset>
+            <ul>
+              <li>
+                <label for="arrival-date-field">Дата заезда:</label>
+                <input type="date" name="arrival-date" id="arrival-date-field" placeholder="в формате день-месяц-год">
+              </li>
+              <li>
+                <label for="departure-date-field">Дата выезда:</label>
+                <input type="date" name="departure-date" id="departure-date-field" placeholder="в формате день-месяц-год">
+              </li>
+              <li>
+                <label for="adults-amount-field">Взрослые: </label>
+                <input type="number" name="adults-amount" id="adults-amount-field" min="1" max="10" step="1" value="2">
+              </li>
+              <li>
+                <label for="children-amount-field">Дети: </label>
+                <input type="number" name="children-amount" id="children-amount-field" min="0" max="10" step="1" value="0">
+              </li>
+            </ul>
+          </fieldset>
+          <a href="inner.html">Найти</a>
+        </form>
       </section> 
       <section>
-        <h2>Карта</h2>
+        <h2 class="visually-hidden">Карта</h2>
         <img src="./img/map.png" width="1200px" height="594px" alt="Расположение городка Седона на карте.">
       </section>
     </main>
