@@ -1,18 +1,26 @@
 body {
   margin: 0;
   padding: 0;
+  min-width: 1200px;
 
   font-family: 'PTSans', Arial, sans-serif;
   line-height: 26px;
   font-size: 14px;
   text-transform: uppercase;
-  color: black;
+  color: #000000;
 
-  background-color:  rgba(0, 1, 1, 0.2);
+  background-color: #f2f2f2;
 }
 
 a {
   text-decoration: none;
+}
+
+.wrapper {
+  text-align: center;
+}
+
+.link {
   color: #000000;
 }
 
@@ -41,18 +49,23 @@ a {
 }
 
 .visually-hidden {
-  visibility: hidden;
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
 }
 
 .background {
-  background-image: url("../img/background/background-photo.jpg"), url("../img/background/background-photo-bottom.png");
-  background-size: 1200px 800px;
-  background-position: top center;
+  width: 1200px;
+  height: 773px;
+  position: relative;
+  background-image: url("../img/background/background-photo-bottom.png"), url("../img/background/background-photo.jpg");
+  background-position: bottom;
   background-repeat: no-repeat;
 }
 
 .feauters {
-  text-align: center;
   line-height: 21px;
   background-color: #ffffff;
 }
@@ -66,13 +79,11 @@ a {
 }
 
 .feauters-item {
-  text-align: center;
   line-height: 21px;
   background-color: #81b3d2;
 }
 
 .feauters-item {
-  text-align: center;
   color: #ffffff;
 }
 
@@ -81,22 +92,20 @@ a {
 }
 
 .feauters-item-number,
-.feautures-item-text {
-  font-weight: normal;
+.feauters-item-text {
+  font-weight: 400;
 }
 
-.advantages-list{
+.advantages-list {
   list-style: none;
   background-color: #ffffff;
 }
 
 .advantages-item {
-  text-align: center;
   color: #000000;
 }
 
 .feauters-item-secondary {
-  text-align: center; 
   background-color: #eeeeee;
 }
 
@@ -107,7 +116,6 @@ a {
 
 .subscribe {
   background-color: #ffffff;
-  text-align: center;
 }
 .subscribe-title {
   font-size: 21px;
@@ -124,25 +132,64 @@ a {
   background-color: #604e43;
 }
 
-.subscribe-button:active{
+.subscribe-button:active {
   color: rgba(255, 255, 255, 0.3);
   background-color: #503e33;
 }
 
-.form-search {
-  display: none;
+.form-search-list {
+  list-style: none;
+}
+
+.form-search-item {
+  font-weight: 700;
+}
+
+.date-field{
+  background-color: #f2f2f2;
+  font-weight: 700;
+}
+
+.date-field:hover,
+.date-field:focus {
+  background-color: #ebebeb;
+}
+
+.date-field:active {
+  background-color: #e5e5e5;
+  border: solid 2px #e5e5e5;
+}
+
+.count-field {
+  font-weight: 700;
+}
+
+.form-search-button {
+  color: #ffffff;
+  background-color: #81b3d2;
+}
+
+.form-search-button:hover,
+.form-search-button:focus {
+  background-color: #669ec0;
+}
+
+.form-search-button:active{
+  color: rgba(255, 255, 255, 0.3);
+  background-color: #5496bd;
 }
 
 .map {
-  text-align: center;
+  background-color: #C0C0C0;
 }
 
 .filter {
   background-image: url("../img/background/filter-background.jpg");
   background-size: 1200px 800px;
   color: #ffffff;
-  text-align: left;
-  font-weight: normal;
+  font-weight: 400;
+  text-align: center;
+  background-repeat: no-repeat;
 }
 
 .form-filter-list {
@@ -185,7 +232,8 @@ a {
 .sorting-link {
   font-size: 12px;
   color: rgba(0, 0, 0, 0.3);
-  text-decoration: underline dotted;
+  border-bottom: 1px dotted;
+  border-color: #81b3d2;
 }
 
 .sorting-link:hover,
@@ -194,8 +242,25 @@ a {
 }
 
 .sorting-link:active {
-  text-decoration: none;
+  border-bottom: none;
   color: #000000;
+}
+
+.sorting-button-up,
+.sorting-button-down {
+  background-color: #cacaca;
+}
+
+.sorting-button-up:hover,
+.sorting-button-up:focus,
+.sorting-button-down:hover,
+.sorting-button-down:focus {
+  background-color: #000000;
+}
+
+.sorting-button-up:active,
+.sorting-button-down:active {
+  background-color: #81b3d2;
 }
 
 .hotels {
@@ -267,14 +332,12 @@ a {
 .footer-phone,
 .footer-phone a {
   font-size: 21px;
-  font-weight: bold;
-  text-align: center;
+  font-weight: 700;
   color: #000000;
 }
 
 .social-list {
   list-style: none;
-  text-align: center;
   background-color: #81b3d2;
 }
 
@@ -287,6 +350,3 @@ a {
   background-color: #5496bd;
 }
 
-.footer-copyright {
-  text-align: center;
-}
